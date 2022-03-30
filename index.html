@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Assignment1</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body class="background">
+    <div>
+      <p class="headline"> Welcome to</p>
+        <p class="headerTitle">Ocean Commotion</p>
+        <p class="headerDesc">
+          An underwater shoot'em up where you can decide between 3 little squids that are trying to hide from evil divers.<br/>
+          Try to keep out of their flashlights sight!<br/>
+          You can eat shrink shrimps to temporarily make yourself smaller and shoot bubbles to scare the divers away.
+        </p>
+      </p>        
+    </div>
+    <div class="leaderboard">
+      <h3 class="heading">Leaderboard</h5>
+      <table class="tableStyle">
+        <tr>
+          <th>🤿 Benni </th><th class="score">223 <span class="purple">(purple character)</span></th>
+        </tr>
+        <tr>
+          <th>🐒 Tom </th><th class="score">210 <span class="purple">(purple character)</span></th>
+        </tr>
+        <tr>
+          <th>🐱 Günther </th><th class="score">201 <span class="purple">(purple character)</span</th>
+        </tr>
+        <tr>
+          <th>🤿 Benni </th><th class="score">196 <span class="blue">(blue character)</span></th>
+        </tr>
+        <tr>
+          <th>🤿 Benni </th><th class="score">134 <span class="green">(green character)</span></th>
+        </tr>
+      </table>
+      <p class="name"></p> <p class="score"></p>
+    </div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Assignment1</div>
+      </div>
+    </div>
+  </body>
+</html>
